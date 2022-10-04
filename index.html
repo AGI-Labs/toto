@@ -81,9 +81,15 @@
             <img src="./toto-benchmark_files/bair_logo.png" alt="bair" style="width:auto; height:50px; padding: 20px">
           </div>
         </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QCgZ-m1o_Pw" title="YouTube video player" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
         <h2>
         <span style="font-size:20px;">In Submission to IEEE International Conference on Robotics and Automation (ICRA), 2023</span>
         </h2>
+        <br>
+        
     
     <center>
       <h2>
@@ -117,11 +123,28 @@
 
     
         <img src="./toto-benchmark_files/toto_teaser.png" alt="toto_teaser" style="width:80%; width:800px">
+        <p>
+        </p><div width="500"><p>
+          <table align="center" width="800px">
+              <tbody><tr>
+              <td>
+        <p align="justify" width="20%">
+        TOTO has two key components: (a) a large-scale offline manipulation dataset to train imitation learning and offline RL algorithms; (b) a shared hardware setup where users can evaluate their methods now and going forward. Because all TOTO participants train using the same publicly-released dataset and evaluate on shared hardware, the benchmark provides a fair apples-apples comparison. We present the TOTO benchmark design as well as initial methods contributed by benchmark beta testers across the country.
+        </p></td></tr></tbody></table>
+      </p>
 
     <hr>
-
+    
     <h1 align="center">Results</h1>
 
+    <div width="500"><p>
+      <table align="center" width="800px">
+          <tbody><tr>
+          <td>
+    <p align="justify" width="20%">
+    The task suite consists of two household manipulation tasks that humans encounter on a daily basis: pouring and scooping. Each involves challenging variations in objects, position, and more.
+  </p></td></tr></tbody></table>
+</p>
 
     <div class="row">
       <div class="column">
@@ -134,6 +157,18 @@
       </div>
     </div>
 
+    <p>
+      <table align="center" width="800px">
+          <tbody><tr>
+          <td>
+    <p align="justify" width="20%">
+      We highlight the value of TOTO by running two sets of experiments:
+      (a) what is a good visual representation for manipulation?
+      (b) what is a good offline algorithm for policy learning?
+      For these experiments, we use baseline implementations solicited from several labs.
+    </p></td></tr></tbody></table>
+    </p>
+
     <div class="row">
      
       <div class="column">
@@ -144,6 +179,17 @@
       </div>
     </div>
 
+    <p>
+      <table align="center" width="800px">
+          <tbody><tr>
+          <td>
+    <p align="justify" width="20%">
+      Vision representation comparison with BC. Models trained on our data (left of dashed line) perform better than generic ones (right of dashed line), and results tend to be better for training object locations than unseen test locations.
+These results show that finetuning the MoCo model on our data outperforms the generic version, as expected. MoCo (In-Domain) achieves the highest success rate and average reward on both scooping and pouring, followed by BYOL, the other in-domain model. In general, the relative performance between models is mostly consistent across scooping and pouring. Resnet50 and MoCo (Generic) perform slightly better on pouring than on scooping.
+The figure also visualizes performance differences due to object locations. Locations seen during training perform better, as expected, but performance does not degrade significantly, suggesting that the representations have a generalizable notion of where the target object is. Surprisingly, the two representations trained on our data (MoCo (In-Domain) and BYOL) perform equally good or even slightly better on unseen locations for scooping.
+    </p></td></tr></tbody></table>
+    </p>
+
     <div class="row">
      
       <div class="column">
@@ -153,6 +199,17 @@
         <img src="./toto-benchmark_files/scooping-pouring-insertionsuccess_rates_policy_plots.png" alt="toto" style="width:80%">
       </div>
     </div>
+
+    <p>
+      <table align="center" width="800px">
+          <tbody><tr>
+          <td>
+    <p align="justify" width="20%">
+      We find that VINN performs the best in train locations. We also note that offline-RL approaches (especially IQL) achieve some success unlike in RB2. This is likely due to a larger and more diverse dataset than RB2, which contributes to better offline RL performance.
+      We found that the scooping proves challenging due to a non-markovian aspect of the task: the spoon is above the bowl both before and after scooping. Thus we would expect open-loop methods (BC, VINN) and those with history (DT) to perform better than others in this setting. While BC and VINN achieve competitive performance on scooping, DT only achieves moderate success on scooping and does not see any positive rewards on pouring. Meanwhile, IQL provides decent performance without history on a non-markovian task.
+      Comparing the train and test location results for policy learning proves interesting. VINN} performs the best on train locations, but it struggles on unseen locations, since it selects actions using the nearest neighbor trajectory from the training data. All other methods also experience some level of degradation when moving to unseen locations, leaving one clear direction for method improvement using TOTO.  
+    </p></td></tr></tbody></table>
+    </p>
 
     </div>
 
