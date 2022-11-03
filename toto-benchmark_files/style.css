@@ -154,4 +154,41 @@ TD.coursename {
     padding: 20px;
 	margin: 0 2rem;
   }
-  
+
+  #topnav {
+	width: 100%;
+ 
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	/* center the elements */
+	display: flex;
+
+	/* make the nav items align to the center */
+	justify-content: center;
+ 
+	/* background-color: Black; */
+ 
+	font-family: Arial, sans-serif;
+	font-size: 22px;
+ }
+ 
+ .nav-link {
+	display: inline-block;
+	width: 100px;
+	height: 55px;
+ 
+	color: White;
+ 
+	text-align: center;
+	line-height: 55px;
+ 
+	text-decoration: none;
+	font-size: 20px;
+ }
+
+ul > li {
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+}
