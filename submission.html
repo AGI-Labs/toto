@@ -63,27 +63,44 @@
                                   <p align="justify" width="20%">
                                     
                                     We invite the community to submit their methods to TOTO benchmark.
-                                    We allow submissions to contain either
+                                    We allow the following types of submission:
                                     <ol>
-                                      <li> A pre-trained visual representation model </li>
-                                      <li> An agent policy either which uses a custom visual representation or the ones we provide </li>
+                                      <li> A pre-trained visual representation model. You will train and submit BC agents using this visual representation model.  </li>
+                                      <li> An agent policy which uses either a custom visual representation or the ones we provide. </li>
                                     </ol>
                                     You can find below the steps to submit your method.
                                     <p></p>
                                     Pre-Training Model Submission Instructions
                                     <ol>
+                                      <!-- TODO: need to update the link after dataset cleanup on google drive -->
                                       <li>Download the dataset <a href="https://drive.google.com/drive/folders/1pDD8c2cUtLFtyAScL5hzJBwnKWsnKnXN?usp=sharing" target="_blank"><b>here</b></a>.</li>
-                                      <li>Use our vision model wrapper here to initialize your vision model</li>
-                                      <li>Run the data_generator script here to generate a new dataset with the wrapped vision model</li>
-                                      <li>Train a BC agent on the newly generated dataset using the script here.</li>
+                                      <ul>
+                                        <li>Note: You may or may not train your visual representation model on our datasets. However, the datasets are still needed for training BC agents for submission. </li>
+                                      </ul>
+                                      <li>Install the TOTO repo <a href="https://github.com/AGI-Labs/toto_starter" target="_blank"><b>here</b></a>.</li> 
+                                      <li>Create an assets/ folder for storing datasets and models.</li>
+                                          <!-- TODO: add a code block with the following code:
+                                          cd toto_starter
+                                          mkdir assets -->
+                                      <li>Move and unzip the datasets in assets/, so it has the following structure: </li>
+                                          <!-- TODO: add a block to show:
+                                          assets/
+                                            - cloud-dataset-scooping/
+                                            - cloud-dataset-pouring/ -->
+                                      <li>Follow the instructions in the repo's README.md and fill in your implementations. </li>
+                                      <!-- <li>Use our vision model wrapper here to initialize your vision model</li>
+                                      <li>Run the data_generator script here to generate a new dataset with the wrapped vision model</li> -->
+                                      <!-- <li>Train a BC agent on the newly generated dataset using the script here.</li> -->
                                       <li>Prepare your agent for submission. Ensure that your zipped folder contains the following files</li>
-                                      <li>TODO: Add folder structure here.</li>
+                                      <!-- TODO: submit the whole toto_starter repo? -->
+                                      <!-- <li>TODO: Add folder structure here.</li> -->
                                       <li>Submit your zipped folder for evaluation using this google <a href="https://docs.google.com/forms/d/e/1FAIpQLScrfl3ugtX2U8I8Zv64ZlniHc9pOLZScIn-OQMg5xrj0WwLYA/viewform?usp=sf_link" target="_blank"><b>form</b></a>.</li>
                                       <li>We will evaluate your method on the robot hardware and update your position on the leaderboard.</li>  
                                     </ol>
 
                                     Agent Policy Submission Instructions
                                     <ol>
+                                      <!-- TODO: need to update the link after dataset cleanup on google drive -->
                                       <li>Download the dataset <a href="https://drive.google.com/drive/folders/1pDD8c2cUtLFtyAScL5hzJBwnKWsnKnXN?usp=sharing" target="_blank"><b>here</b></a>.</li>
                                       <li>Update the agent file: agents/CollaboratorAgent.py. This acts as a wrapper around your model to interface with the robot stack. Please refer to agents/Agent.py for more information</li>
                                       <li>Update the agent config file outputs/collaborator_agent/hydra.yaml for initializing your agent</li>
