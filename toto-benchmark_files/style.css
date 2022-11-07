@@ -172,6 +172,8 @@ TD.coursename {
  
 	font-family: Arial, sans-serif;
 	font-size: 22px;
+
+	
  }
  
  .nav-link {
@@ -188,7 +190,12 @@ TD.coursename {
 	font-size: 20px;
  }
 
-ul > li {
-    display: inline-block;
+ /* set navlist property */
+ .nav-list {
+	/* display horizontal */
+	/* center the elements */
+	display: flex;
+	list-style:none;
     /* You can also add some margins here to make it look prettier */
 }
+
