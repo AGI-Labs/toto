@@ -61,23 +61,33 @@
                               <tbody><tr>
                                 <td>
                                   <p align="justify" width="20%">
-                                    
+
+                                    <h2>TOTO Datasets</h2>
+                                    <br>
+                                    TOTO consists of two tabletop manipulations tasks, scooping and pouring performed on a real robot. 
+                                    The datasets of the two tasks can be downloaded <a href="https://drive.google.com/drive/folders/1JGPGjCqUP4nUOAxY3Fpx3PjUQ_loo7fc?usp=share_link">here</a>.
+                                    <br>
+                                    <strong>Note: </strong>For detailed information about the datasets, please refer to the <a href="https://github.com/AGI-Labs/toto_benchmark/tree/release#toto-datasets">dataset section</a> of our readme.
+                                    <br>
+                                    <br>
+                                    <h2>Contributing to TOTO</h2>
                                     We invite the community to submit their methods to TOTO benchmark.
                                     We allow the following types of submission:
                                     <ol>
                                       <li> A pre-trained visual representation model. You will train and submit BC agents using this visual representation model.  </li>
                                       <li> An agent policy which uses either a custom visual representation or the ones we provide. </li>
                                     </ol>
-                                    You can find below the steps to submit your method.
+                                    The steps for the two types of submissions are outlined in the sections below.
                                     <p></p>
-                                    Pre-Training Model Submission Instructions
+
+                                    <h2>Visual Representation Model Submission Instructions</h2>
                                     <ol>
                                       <!-- TODO: need to update the link after dataset cleanup on google drive -->
                                       <li>Download the dataset <a href="https://drive.google.com/drive/folders/1pDD8c2cUtLFtyAScL5hzJBwnKWsnKnXN?usp=sharing" target="_blank"><b>here</b></a>.</li>
                                       <ul>
                                         <li>Note: You may or may not train your visual representation model on our datasets. However, the datasets are still needed for training BC agents for submission. </li>
                                       </ul>
-                                      <li>Install the <strong>toto_benchmark</strong> repo <a href="https://github.com/AGI-Labs/toto_benchmark/tree/release" target="_blank"><b>here</b></a>.</li> 
+                                      <li>Install the <strong>toto_benchmark</strong> repo from <a href="https://github.com/AGI-Labs/toto_benchmark/tree/release" target="_blank"><b>here</b></a>.</li> 
                                       <li>Create an assets/ folder for storing datasets and models.</li>
                                           <!-- TODO: add a code block with the following code:
                                           cd toto_starter
@@ -98,26 +108,32 @@
                                             
                                       <!-- add link -->
 
-                                      <li>Follow the instructions in the repo's <a href="https://github.com/AGI-Labs/toto_benchmark/tree/release#type-1-contributing-a-visual-representation-model">README.md</a> and fill in your implementations. </li>
+                                      <li>Follow the instructions in the repo's <a href="https://github.com/AGI-Labs/toto_benchmark/tree/release#type-1-contributing-a-visual-representation-model">visual representation model</a> readme section and fill in your implementations. </li>
                                       <!-- <li>Use our vision model wrapper here to initialize your vision model</li>
                                       <li>Run the data_generator script here to generate a new dataset with the wrapped vision model</li> -->
                                       <!-- <li>Train a BC agent on the newly generated dataset using the script here.</li> -->
                                       
                                       <li>Run <code> prepare_submission.sh </code> script to prepare your agent for submission.</li>
+                                      <ul>
+                                        <li>Note: Please ensure that the dataset and other artifacts are contained only within the assets folder. Do not include the dataset as part of your submission.</li>
+                                      </ul>
                                       <!-- TODO: submit the whole toto_starter repo? -->
                                       <!-- <li>TODO: Add folder structure here.</li> -->
                                       <li>Submit your zipped folder for evaluation using this google <a href="https://docs.google.com/forms/d/e/1FAIpQLScrfl3ugtX2U8I8Zv64ZlniHc9pOLZScIn-OQMg5xrj0WwLYA/viewform?usp=sf_link" target="_blank"><b>form</b></a>.</li>
                                       <li>We will evaluate your method on the robot hardware and update your position on the leaderboard.</li>  
                                     </ol>
 
-                                    Agent Policy Submission Instructions
+                                    <h2>Agent Policy Submission Instructions</h2>
                                     <ol>
                                       <!-- TODO: need to update the link after dataset cleanup on google drive -->
-                                      <li>Download the dataset <a href="https://drive.google.com/drive/folders/1pDD8c2cUtLFtyAScL5hzJBwnKWsnKnXN?usp=sharing" target="_blank"><b>here</b></a>.</li>
-                                      <li>Install the <strong>toto_benchmark</strong> repo <a href="https://github.com/AGI-Labs/toto_benchmark/tree/release" target="_blank"><b>here</b></a>.</li> 
+                                      <li>Download the dataset <a href="https://drive.google.com/drive/folders/1JGPGjCqUP4nUOAxY3Fpx3PjUQ_loo7fc?usp=share_link" target="_blank"><b>here</b></a>.</li>
+                                      <li>Install the <strong>toto_benchmark</strong> repo from <a href="https://github.com/AGI-Labs/toto_benchmark/tree/release" target="_blank"><b>here</b></a>.</li> 
                                       <li>Train your agents in your preferred way.</li>
-                                      <li>Follow the instructions in the repo's <a href="https://github.com/AGI-Labs/toto_benchmark/tree/release#type-2-contributing-an-agent">README.md</a> and fill in your implementations. </li>
+                                      <li>Follow the instructions in the repo's <a href="https://github.com/AGI-Labs/toto_benchmark/tree/release#type-2-contributing-an-agent"> agent submission</a> readme section and fill in your implementations. </li>
                                       <li>Run <code> prepare_submission.sh </code> script to prepare your agent for submission.</li>
+                                      <ul>
+                                        <li>Note: Please ensure that the dataset and other artifacts are contained only within the assets folder. Do not include the dataset as part of your submission.</li>
+                                      </ul>
                                       <li>Submit your zipped folder for evaluation using this google <a href="https://docs.google.com/forms/d/e/1FAIpQLScrfl3ugtX2U8I8Zv64ZlniHc9pOLZScIn-OQMg5xrj0WwLYA/viewform?usp=sf_link" target="_blank"><b>form</b></a>.</li>
                                       <li>We will evaluate your method on the robot hardware and update your position on the leaderboard.</li>
                                     </ol>
