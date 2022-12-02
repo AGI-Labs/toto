@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/toto/static/css/main.0fb03daf.css",
-    "main.js": "/toto/static/js/main.d99e1344.js",
-    "static/media/test_video_pour.gif": "/toto/static/media/test_video_pour.7a2cf6f1c0e040b21ea3.gif",
-    "static/media/toto_dataset.gif": "/toto/static/media/toto_dataset.f9f6aecbd1a245ff89c4.gif",
-    "static/media/test_video_scoop.gif": "/toto/static/media/test_video_scoop.9b425ccb81fe14f51851.gif",
-    "static/media/toto_paper_preview.png": "/toto/static/media/toto_paper_preview.c69f297afba729d1af67.png",
-    "static/media/tartan_dog.jpeg": "/toto/static/media/tartan_dog.01c23eef7f2573e93ae1.jpeg",
-    "index.html": "/toto/index.html",
-    "main.0fb03daf.css.map": "/toto/static/css/main.0fb03daf.css.map",
-    "main.d99e1344.js.map": "/toto/static/js/main.d99e1344.js.map"
+    "main.css": "/static/css/main.0fb03daf.css",
+    "main.js": "/static/js/main.af37cc54.js",
+    "static/media/test_video_pour.gif": "/static/media/test_video_pour.7a2cf6f1c0e040b21ea3.gif",
+    "static/media/toto_dataset.gif": "/static/media/toto_dataset.f9f6aecbd1a245ff89c4.gif",
+    "static/media/test_video_scoop.gif": "/static/media/test_video_scoop.9b425ccb81fe14f51851.gif",
+    "static/media/toto_paper_preview.png": "/static/media/toto_paper_preview.c69f297afba729d1af67.png",
+    "static/media/tartan_dog.jpeg": "/static/media/tartan_dog.01c23eef7f2573e93ae1.jpeg",
+    "index.html": "/index.html",
+    "main.0fb03daf.css.map": "/static/css/main.0fb03daf.css.map",
+    "main.af37cc54.js.map": "/static/js/main.af37cc54.js.map"
   },
   "entrypoints": [
     "static/css/main.0fb03daf.css",
-    "static/js/main.d99e1344.js"
+    "static/js/main.af37cc54.js"
   ]
 }
