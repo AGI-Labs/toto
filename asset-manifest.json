@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f855e71b.css",
-    "main.js": "/static/js/main.0514fafa.js",
+    "main.css": "/static/css/main.d9a3ed9e.css",
+    "main.js": "/static/js/main.8bf72b70.js",
     "static/media/test_video_pour.gif": "/static/media/test_video_pour.7a2cf6f1c0e040b21ea3.gif",
     "static/media/toto_dataset.gif": "/static/media/toto_dataset.f9f6aecbd1a245ff89c4.gif",
     "static/media/test_video_scoop.gif": "/static/media/test_video_scoop.9b425ccb81fe14f51851.gif",
+    "static/media/scooping_objects.jpg": "/static/media/scooping_objects.baac266b83a006a8202d.jpg",
+    "static/media/pouring_objects.jpg": "/static/media/pouring_objects.efbeed6c917bf12a7395.jpg",
+    "static/media/locations.jpg": "/static/media/locations.ce1ba542536c1cfc5428.jpg",
     "static/media/toto_paper_preview.png": "/static/media/toto_paper_preview.c69f297afba729d1af67.png",
     "static/media/tartan_dog.jpeg": "/static/media/tartan_dog.ec53dfaf66a90f892f2a.jpeg",
     "index.html": "/index.html",
-    "main.f855e71b.css.map": "/static/css/main.f855e71b.css.map",
-    "main.0514fafa.js.map": "/static/js/main.0514fafa.js.map"
+    "main.d9a3ed9e.css.map": "/static/css/main.d9a3ed9e.css.map",
+    "main.8bf72b70.js.map": "/static/js/main.8bf72b70.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e71b.css",
-    "static/js/main.0514fafa.js"
+    "static/css/main.d9a3ed9e.css",
+    "static/js/main.8bf72b70.js"
   ]
 }
